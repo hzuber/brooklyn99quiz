@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>brooklyn nine-nine quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|PT+Sans&display=swap" rel="stylesheet">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+    <div class="titlePage">
+      <div class= "titleContainer">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/e762e3bb-610d-4be3-a0c6-1ff34e9f99a4/dazh2k1-ef628b8c-1c4c-458b-a592-7e7451c10489.jpg" alt="The B99 Gang" class="titleImg">
+        <h3 class="titleName">:the quiz</h3>
+        <button class="startButton">Start</button>
+      </div>
+    </div>
+    <div class="quizContainer">
+      <div class="headerBorder">
+        <header class="quizHeader">
+          <ul>
+            <li class="header-item">Current Score:<span class="score"></span>/<span class = "currentQuestion"></span></li>
+            <li class="header-item">Score:Question: <span class = "currentQuestion">0</span>/10</li>
+          </ul>
+        </header>
+      </div>
+      <div class="questionArea">
+      </div>
+    </div>
+    <div id="answerPage" class="answerPage">
+      <h2 class="exclamation" id="exclamation"></h2>
+      <div class="answerImgContainer">
+        <img class="answerPageImg" src="" alt="">
+      </div>
+      <p id="answer" class="answer"></p>
+      <button id="nextButton" class="next-btn">Next Question</button>
+    </div>
+    <div id="resultPage" class="resultPage">
+      <h2 class="exclamation" id="exclamation"></h2>
+      <div class="resultImgContainer">
+        <img class="resultPageImg" src="" alt="">
+      </div>
+      <h4 id="finalScore" class="finalScore">You got <span class='score'></span>/10 questions right</h4>
+      <h5 id="ranking" class="ranking"></h5>
+      <button id="nextButton" class="next-btn"></button>
+    </div>
+    </div>
+  </body>
+</html>

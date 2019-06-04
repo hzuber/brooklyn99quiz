@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+  background-image: url("https://tribzap2it.files.wordpress.com/2016/02/mysteries-of-laura-precinct.jpg?w=900");
+  background-color: #cccccc; 
+  height: 1000px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.hidden{
+  display: none;
+}
+.titlePage{
+  background: rgb(252, 248, 6);
+  text-align: center;
+  width: 100%;
+  height:1000px;
+  min-height: 500px;
+  margin: 0px;
+}
+.titleContainer{
+  background: rgb(252, 248, 6);
+  text-align: center;
+  width: 100%;
+  min-width: 520px;
+  max-width: 500px;
+  margin: 0px auto;
+}
+.titleImg{
+  width:100%;
+}
+.titleName{
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 0.15em;
+  text-shadow: 2px 2px rgba(255, 102, 0, 0.945);
+  -ms-transform: skewY(-10deg); /* IE 9 */
+  -webkit-transform: skewY(-10deg); /* Safari 3-8 */
+  transform: skewY(-10deg) skew(-1.5deg);
+  margin-top: -65px;
+}
+.startButton{
+  background: black;
+  color:  rgb(252, 248, 6);
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 34px;
+  padding: 18px 30px;
+  border: none;
+  outline: none;
+  margin: 30px 0px 10px 0px;
+  transition: .3s;
+  cursor: pointer;
+  box-shadow: 0 0 8px 3px rgba(255, 102, 0, 0.945);
+}
+.startButton:hover{
+  background: rgb(252, 248, 6);
+  color: black;
+  box-shadow: none;
+  border: 2px solid black;
+}
+.quizContainer{
+  max-width: 450px;
+  min-width: 350px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: rgb(1, 32, 88);
+  padding: 10px 0px;
+  text-align: center;
+}
+.quizHeader{
+  font-size: 16px;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 10px 0px;
+  padding: 1px;
+  text-align: center;
+  background: rgb(252, 248, 6);
+  width: 100%;
+  border-top: 5px dashed black;
+  border-bottom: 5px dashed black;
+  transform: skewY(5deg);
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+}
+.quizHeader:before{
+  width:100%;
+  transform: skewY(5deg);
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  content:'';
+}
+ul{
+  list-style: none;
+  display:inline;
+  padding: 0px;
+}
+.header-item{
+  display:inline;
+}
+fieldset{
+  border:none;
+  padding: 10px;
+  margin: 10px;
+}
+.question{
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 200;
+  margin: 20px 0px 30px 25px;
+  color:white;
+  text-align: left;
+}
+.option{
+  width: 90%;
+  display: block;
+  background: rgb(151, 207, 221);
+  margin: 10px;
+  color: rgb(1, 32, 88);
+  cursor: pointer;
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+  font-size: 18px;
+}
+.clicked{
+  background: rgb(252, 248, 6);
+  color:black;
+}
+.radio-button{
+  display:none;
+}
+.option:hover, .option:focus{
+  background: rgb(252, 248, 6);
+  color:black;
+}
+.option input[type=radio]:active + label {
+  background: rgb(252, 248, 6);
+  color:black;
+}
+.submit-btn{
+  background: rgb(1, 32, 88);
+  color:  rgb(252, 248, 6);
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  transition: .3s;
+  cursor: pointer;
+  box-shadow: 0 0 3px 1px #fff;
+  margin:40px auto;
+  padding: 10px 15px;
+}
+.submit-btn:hover{
+  background: rgb(252, 248, 6);
+  color: black;
+  box-shadow: none;
+}
+.exclamation{
+  font-size:26px;
+  font-weight:200;
+  margin: 20px 15px 0px 15px;
+}
+.img{
+  background-color: grey;
+  height: 300px;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.answerPage, .resultPage{
+  max-width: 450px;
+  min-width: 375px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: rgb(151, 207, 221);
+  text-align: center;
+  padding: 10px;
+  color: rgb(1, 32, 88);
+}
+.answerImgContainer, .resultImgContainer{
+  background: rgb(151, 207, 221);
+  width: 350px;
+  height:350px;
+  margin: 0px auto;
+}
+.answerPageImg, .resultPageImg{
+  width:325px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.answer{
+  font-size:22px;
+  padding: 10px;
+}
+.next-btn{
+  background: rgb(151, 207, 221);
+  color:  rgb(1, 32, 88);
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 22px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  margin: 40px auto;
+  transition: .3s;
+  cursor: pointer;
+  box-shadow:0 0 3px 1px #fff;
+}
+.next-btn:hover{
+  background: rgb(252, 248, 6);
+  color: black;
+  box-shadow: none;
+}
+.resultPage{
+  max-width: 450px;
+  min-width: 375px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: rgb(151, 207, 221);
+  padding: 10px;
+  text-align: center;
+}
+.resultPageImg{
+  max-height: 350px;
+}
+.finalScore{
+  font-size:24px;
+}
